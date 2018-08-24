@@ -54,8 +54,10 @@ def scaleImage(imageToScale, w, h):
     return imageToScale
 
 def init():
-    template, imprint = loadImges("okayplz.jpg","dan.jpg")
+    #Change image paths
+    template, imprint = loadImges("mona-lisa.jpg","dan.jpg")
     imgWidth, imgHeight = template.size 
+    #change rows and cols to adjust resolution
     rows = 40
     cols = 80
     blockWidth = imgWidth // cols
